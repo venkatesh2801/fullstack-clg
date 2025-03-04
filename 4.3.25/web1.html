@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACE Prep Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .content {
+            max-width: 500px;
+            padding-left: 40px;
+        }
+        .content h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .content p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .discount {
+            background: green;
+            color: white;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .btn {
+            background: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .image img {
+            width: 700px;
+            border-radius: 40%;
+            margin-left: 20px;
+            margin-right: 80px;
+            
+        }
+        .menu-toggle i {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .feature {
+            width: 30%;
+        }
+
+        .feature img {
+            width: 60px;
+        }
+
+        .feature h3 {
+            font-weight: bold;
+        }
+
+        .menu-text {
+            display: inline-block;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .menu-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #f8e7c2;
+            padding: 30px 10px;
+            margin-top: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo img {
+            height: 50px;
+        }
+
+        .footer-links {
+            text-align: left;
+        }
+
+        .footer-links h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin: 5px 0;
+        }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer-subscribe input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+
+        .social-icons a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="download1.png" alt="FACE Prep Logo">
+        </div>
+        <div class="menu">&#9776;</div>
+    </header>
+    <div class="container">
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/1416818056/photo/colourful-vegan-bowl-with-quinoa-and-sweet-potato.jpg?s=612x612&w=0&k=20&c=t1I58CqucV6bLRaa4iDy7PIVjnV8D9eWDjEsX9X-87k=" alt="Food Bowl">
+        </div>
+        <div class="content">
+            <span class="discount">50% Off on All Products</span>
+            <h1>Enjoy Your Delicious Food</h1>
+            <p>Embrace a new era of Computer Science education at FACE Prep Campus, where we redefine degrees for the modern world. Follow us on social media for up-to-date Career Guidance, Scholarships, Expert Interviews, Program Insights, and help shape the next generation of computer science leaders.</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </div>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgkBEzSNgSkHcsZTGTcNvhJh4f0YU9UFpUJg&s" alt="Discount Voucher">
+            <h3>Discount Voucher</h3>
+            <p>Embrace a new era of Computer Science education at FACE Prep Campus, where we redefine degrees for the modern world.</p>
+        </div>
+        <div class="feature">
+            <img src="download (8).jpg" alt="Fresh Healthy Food">
+            <h3>Fresh Healthy Food</h3>
+            <p>Follow us on social media for up-to-date Career Guidance, Scholarships, Expert Interviews, and Program Insights.</p>
+        </div>
+        <div class="feature">
+            <img src="download (9).jpg" alt="Fast Home Delivery">
+            <h3>Fast Home Delivery</h3>
+            <p>Help shape the next generation of computer science leaders with quality food and services.</p>
+        </div>
+    </section>
+
+    <!-- Centered Green Text for "Our Menu" -->
+    <div class="menu-text">
+        Our Menu
+    </div>
+    <h2>Explore Our Menu</h2>
+
+    <!-- Food Image Grid -->
+    <section class="menu-grid">
+        <img src="download.jpg" alt="Food Item 1">
+        <img src="download (1).jpg" alt="Food Item 2">
+        <img src="download (2).jpg" alt="Food Item 3">
+        <img src="download (3).jpg" alt="Food Item 4">
+        <img src="download (4).jpg" alt="Food Item 5">
+        <img src="download (5).jpg" alt="Food Item 6">
+        <img src="download (6).jpg" alt="Food Item 7">
+        <img src="download(7).jpg" alt="Food Item 8">
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="download1.png" alt="FACE Prep">
+            </div>
+            <div class="footer-links">
+                <h3>Main Links</h3>
+                <ul>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">New Order</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">News & Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h3>Support</h3>
+                <input type="email" placeholder="Enter your Email...">
+                <h3>Follow Us</h3>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
