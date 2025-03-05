@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #87CEEB; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: white;
+            border: 2px solid black;
+            width: 100%;
+            flex-grow: 1;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+            background-color: #87CEEB;
+        }
+        .header .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .header p {
+            font-size: 16px;
+        }
+        
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; 
+            padding: 20px;
+        }
+        
+        .about-me {
+            padding: 15px;
+            border: 2px solid black;
+            background: #f8f8f8;
+            margin-bottom: 20px;
+        }
+        .about-me h2 {
+            margin-bottom: 10px;
+        }
+        
+        .skills-section {
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            height: 100px;
+            border: 2px solid black;
+            background: #f8f8f8;
+            text-align: center;
+        }
+        
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; 
+        }
+        .projects {
+            display: flex;
+            gap: 10px;
+            flex-grow: 1; 
+        }
+        
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <div class="info">
+                <h1>VENKATESH B</h1>
+                <p>CSE WITH AI</p>
+                <P>SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY</P>
+            </div>
+            
+            <div class="profile-pic">
+                <img src="profile.png" alt="Profile Picture">
+            </div>
+        </div>
+
+        
+        <div class="main-content">
+
+            
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Hi I'm Venkatesh, a full-stack developer with a knack for building scalable and efficient web applications. </p>
+            </div>
+
+            
+            <div class="skills-section">
+                <h2>Educational achievements</h2>
+                <div class="skills">
+                    <div class="box">In my 10th grade i have scored 85% where maths and science where my major subjects
+                        i was strong in mathematics and i score 95 out of 100. 
+                    </div>
+                    <div class="box">In my 12th grade i have scored 89% where maths and computer science was my major
+                        subjects, in computer science we had python and sql in our syllabus and it was in basic level
+                        and i was quite good in it.
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="projects-container">
+                <h2>Extra activities</h2>
+                <div class="projects">
+                    <div class="box">For my extra curricular activities
+                        I was a Volunteer, Red Cross Youth Program
+                        Organized blood donation camps and awareness programs.
+                        Assisted in disaster relief efforts and community welfare initiatives.
+                    </div>
+                    <div class="box">For my co curricular activities
+                        I was a Member, Coding Club (2020-2023)
+                        Participated in hackathons and developed apps for social impact.
+                        Built an AI-powered chatbot as a part of a team project.
+                    </div>
+                    <div class="box">for contact,
+                        email:venkatkbs14@gamil.com
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+</body>
+</html>
