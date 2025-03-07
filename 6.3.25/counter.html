@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: bisque;
+            width: 100%;
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .counter-container{
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+
+        <div>
+            <h1>COUNTER</h1>
+
+        </div> 
+        <div>
+            <p id="result">0</p>
+
+        </div>
+        <div>
+            <button onclick="sub()">-1</button>
+        <button onclick="add()">+1</button>
+
+        </div>
+
+        <div>
+            <button onclick="reset()">reset</button>
+
+        </div>
+        
+        
+    </div>
+
+    <script>
+        let count=0
+
+        function sub(){
+            count=count-1
+            render()
+          }
+        
+
+        function add(){
+            count=count+1
+            render()
+            
+
+        }
+        function reset(){
+            count = 0
+            render()
+        }
+        function render(){
+            document.getElementById("result").innerHTML = count
+        }
+    </script>
+</body>
+</html>
